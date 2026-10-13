@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav.lateral">
+      
+        <a href="index.html">Inicio</a>
+        <a href="bicicletas.html">Biciletas</a>
+        <a href="formulario.html">Formulario</a>
+    </nav>
+    <br>
+
+    <h3>Si desea puede rellenar el siguiente formulario </h3>
+
+  <form action="/enviar-datos" method="POST">
+    <fieldset> 
+    <p>
+        <label Pisos for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required>
+    </p>
+    
+    <p>
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" required>
+    </p>
+    
+    <p>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required>
+    </p>
+    
+    <p>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono">
+    </p>
+    
+    <p>
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha_nacimiento">
+    </p>
+    <p>
+       <label for="text">Sexo:</label><br>
+            <input type="radio" name="sexo" value="hombre"> Hombre
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="mujer"> Mujer
+        </label>
+        <label>
+            <input type="radio" name="sexo" value="otro"> Otro
+        </label>
+    </p>
+    
+    <br>
+    <p>
+        <label for="fecha-nacimiento">Tipo de bicicleta:</label>
+        <select name="bicicletas" id="">
+            <option value="nuevas">Nuevas</option>
+            <option value="usadas">Usadas</option>
+        </select>
+    </p>
+ 
+    <p>Observaciones <br>
+        <textarea name="observaciones" id=""></textarea>
+    </p>
+    <br>
+    <p>
+    <button type="submit">Enviar</button>
+    </p>
+    <br>
+    </fieldset>
+</form>
+
+
+
+
+
+
+</body>
+</html>
